@@ -30,6 +30,6 @@ int main(int argc, char* argv[]) {
 
 	uint32_t n_total = n + n1;
 
-	printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", n, n, n1, n1, n + n1, n + n1)
+	printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", n, n, n1, n1, n_total, n_total)
 
 }
