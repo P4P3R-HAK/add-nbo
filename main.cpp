@@ -11,10 +11,11 @@ int main(int argc, char* argv[]) {
 		printf("fopen null [1] input!!!\n");
 		return 1;
 	}
+	uint32_t n;
 	
 	fread(&n, sizeof(n), 1, fp);
-
-	uint32_t n = ntohl(n);
+	n = ntohl(n);
+	
 	fclose(fp);
 
 	FILE *fp = fopen(argv[2], "r");
@@ -22,10 +23,11 @@ int main(int argc, char* argv[]) {
 		printf("fopen null [2] input!!!\n");
 		return 1;
 	}
+	uint32_t n1;
 	
 	fread(&n1, sizeof(n1), 1, fp);
-
-	uint32_t n1 = ntohl(n1);
+	n1 = ntohl(n1);
+	
 	fclose(fp);
 
 	uint32_t n_total = n + n1;
